@@ -1,18 +1,28 @@
-import React from 'react'
-import {Link} from "react-router-dom"
+import React , {useState} from 'react'
+import {Link, NavLink} from "react-router-dom"
+import "./Navbar.css"
+import "../App.css"
 export default function Navbar() {
+    const [menuOpen ,setMenuOpen]=useState(false)
   return (
    <nav>
-    <Link to ='/'>W-safe</Link>
-    <ul>
+    <Link to ='/' className='title'>W-safe</Link>
+    <div className='menu' onClick={()=>{
+        setMenuOpen(!menuOpen);
+    }}>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul className={menuOpen ? "open" : ""}>
         <li>
-            <Link to = "/about">About</Link>
+            <NavLink to = "/about">About</NavLink>
         </li>
         <li>
-        <Link to = "/marks">Mark flag</Link>
+        <NavLink to = "/marks">Mark Flag</NavLink>
         </li>
         <li>
-        <Link to = "/friends">your Friends</Link>
+        <NavLink to = "/friends">Your Friends</NavLink>
         </li>
     </ul>
    </nav>
