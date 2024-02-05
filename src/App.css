@@ -3,3 +3,12 @@
   height: 100%;
   width: 100%;
 }
+.image{
+ width: 100px;
+ height: 50px;
+}
+.image1{
+  background-size: cover;
+  width: 450px;
+  height: 400px;
+}
