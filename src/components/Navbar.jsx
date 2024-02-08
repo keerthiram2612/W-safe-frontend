@@ -6,7 +6,7 @@ export default function Navbar() {
     const [menuOpen ,setMenuOpen]=useState(false)
   return (
    <nav>
-    <Link to ='/' className='title'>W-safe</Link>
+    <Link to ='/' className='title'>Way-safe</Link>
     <div className='menu' onClick={()=>{
         setMenuOpen(!menuOpen);
     }}>
