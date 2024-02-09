@@ -50,6 +50,7 @@ nav .menu span{
     background-color: white;
     border-radius: 0.25rem;
 }
+
 @media (max-width:480px){
     nav .menu{
         display: flex;
