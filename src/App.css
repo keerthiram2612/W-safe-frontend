@@ -23,6 +23,10 @@
    transform: translateX(-700px);
    margin: 30px 30px;
 
+
+}
+.instagram:hover{
+  color: black;
 }
          
 .btn-grad {
