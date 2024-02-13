@@ -2,7 +2,8 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faInstagram} from  '@fortawesome/free-brands-svg-icons'
+import {faFacebook, faInstagram} from  '@fortawesome/free-brands-svg-icons'
+
 
 export default function Home() {
   const gotoAbout=()=>{
@@ -23,7 +24,14 @@ export default function Home() {
       <button onClick={gotoAbout} className='btn-grad'>More about
       </button>
       <div className='icons'>
+        <a href = "https://www.instagram.com/">
       <FontAwesomeIcon className="instagram"icon={faInstagram} />
+      </a>
+       <a href = "https://www.facebook.com/">
+       <FontAwesomeIcon className='facebook' icon={faFacebook} />
+       </a>
+       <a href = "https://eservices.tnpolice.gov.in/CCTNSNICSDC/ComplaintRegistrationPage?0">
+       </a>
       </div>
      
     </div>

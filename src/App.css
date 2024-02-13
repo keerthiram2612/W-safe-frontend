@@ -28,7 +28,28 @@
 .instagram:hover{
   color: black;
 }
-         
+   
+.facebook{
+  width: 40px;
+  height: 40px;
+  color: red;
+  float: right;
+   transform: translateX(-520px);
+   margin: 30px 30px;
+
+}
+.facebook:hover{
+  color: black;
+}
+.message{
+  width: 40px;
+  height: 40px;
+  color: red;
+  float: right;
+   transform: translateX(-520px);
+   margin: 30px 30px;
+  
+}
 .btn-grad {
   background-image: linear-gradient(to right, #EB3349 0%, #F45C43  51%, #EB3349  100%);
   padding: 20px 20px;
